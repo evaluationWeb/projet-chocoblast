@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ChocoblastEndpoint",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

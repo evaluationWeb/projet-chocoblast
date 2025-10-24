@@ -15,6 +15,7 @@ session_start();
 use App\Controller\HomeController;
 use App\Controller\ErrorController;
 use App\Controller\SecurityController;
+use App\Controller\Api\ApiController;
 
 $errorController = new ErrorController();
 
@@ -39,6 +40,8 @@ $router->map(Route::controller('GET', '/register', SecurityController::class, 'r
 $router->map(Route::controller('POST', '/register', SecurityController::class, 'register'));
 $router->map(Route::controller('GET', '/test', HomeController::class, 'test',["ROLE_USER"]));
 $router->map(Route::controller('GET', '/cgu', HomeController::class, 'showCgu'));
+$router->map(Route::controller('GET', '/api', ApiController::class, 'index'));
+
 
 try {
     $router->dispatch();
