@@ -33,7 +33,7 @@ class HomeController extends AbstractController
      */
     public function index() 
     {
-        $this->render("home", "vide");
+        $this->render("home", "home");
     }
 
     /**
@@ -44,4 +44,14 @@ class HomeController extends AbstractController
     {
         $this->render("test", "test");
     }
+
+    /**
+     * Méthode qui retourne la page CGU
+     * @return void Affiche la page de CGU
+     */
+    public function showCgu()
+    {
+        $this->render("cgu", "cgu");
+    }
+
 }

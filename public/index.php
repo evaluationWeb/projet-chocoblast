@@ -38,6 +38,7 @@ $router->map(Route::controller('GET', '/logout', SecurityController::class, 'log
 $router->map(Route::controller('GET', '/register', SecurityController::class, 'register'));
 $router->map(Route::controller('POST', '/register', SecurityController::class, 'register'));
 $router->map(Route::controller('GET', '/test', HomeController::class, 'test',["ROLE_USER"]));
+$router->map(Route::controller('GET', '/cgu', HomeController::class, 'showCgu'));
 
 try {
     $router->dispatch();

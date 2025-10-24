@@ -75,12 +75,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/evaluationWeb/router-librairie.git",
-                "reference": "1b8bcf6cbd9423f5a340d001b8a9cffcbdfa87e2"
+                "reference": "bf6c3b19fcbea88bd2374066b92104d94dc4b182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/evaluationWeb/router-librairie/zipball/1b8bcf6cbd9423f5a340d001b8a9cffcbdfa87e2",
-                "reference": "1b8bcf6cbd9423f5a340d001b8a9cffcbdfa87e2",
+                "url": "https://api.github.com/repos/evaluationWeb/router-librairie/zipball/bf6c3b19fcbea88bd2374066b92104d94dc4b182",
+                "reference": "bf6c3b19fcbea88bd2374066b92104d94dc4b182",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "issues": "https://github.com/evaluationWeb/router-librairie/issues",
                 "source": "https://github.com/evaluationWeb/router-librairie"
             },
-            "time": "2025-10-04T13:45:23+00:00"
+            "time": "2025-10-24T12:15:45+00:00"
         },
         {
             "name": "mithridatem/validation",
