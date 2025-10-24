@@ -13,4 +13,5 @@
     Bienvenue <strong><?=$_SESSION["firstname"] ?? ""?></strong> sur cette page accessible si connecté !
     </main>
 </body>
+<?php include "components/components_footer.php";?>
 </html>

@@ -22,6 +22,7 @@
             <p><?= $data["message"] ??""?></p>
         </section>
     </main>
+    <?php include "components/components_footer.php";?>
 </body>
 
 </html>

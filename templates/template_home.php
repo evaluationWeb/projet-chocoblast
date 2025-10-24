@@ -11,6 +11,7 @@
     <main class="container">
     <?php include "components/components_navbar.php";?>
     <h1>Bienvenue sur Chocoblast !!!</h1>
-    </main>
+</main>
+<?php include "components/components_footer.php";?>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <ul>
         <!-- Menu Commun -->
         <li><a href="/">Home</a></li>
+        <li><a href="/cgu">CGU</a></li>
         <!-- Menu déconnecté -->
         <?php if (!isset($_SESSION["email"])) : ?>
         <li><a href="/register">Register</a></li>

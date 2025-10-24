@@ -25,7 +25,8 @@
         </form>
         <p><?= $data["message"] ?? "" ?></p>
     </div>
-    </main>
+</main>
+<?php include "components/components_footer.php";?>
 </body>
 
 </html>
