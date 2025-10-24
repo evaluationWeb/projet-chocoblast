@@ -10,8 +10,8 @@
 </head>
 
 <body>
+    <?php include "components/components_navbar.php";?>
     <main class="container">
-        <?php include "components/components_navbar.php";?>
         <section>
             <h1>Se connecter</h1>
             <form action="" method="post">

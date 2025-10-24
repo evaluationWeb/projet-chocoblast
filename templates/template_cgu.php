@@ -1,15 +1,17 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <title><?=$title ?? "" ?></title>
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title><?= $title ?? "" ?></title>
 </head>
+
 <body>
-        <main class="container">
-            <?php include "components/components_navbar.php";?>
+    <?php include "components/components_navbar.php"; ?>
+    <main class="container">
         <header>
             <h1>Règlement Officiel du ChocoBLAST 🍫</h1>
             <p><em>Version du 23 janvier 2020 – Reconnu d’utilité publique</em></p>
@@ -97,7 +99,7 @@
         <section>
             <h2>Délation</h2>
             <p>La délation, c’est mal ! 😈<br>
-            La ChocoPOLICE veille. Le délateur subit une double punition.</p>
+                La ChocoPOLICE veille. Le délateur subit une double punition.</p>
         </section>
 
         <section>
@@ -105,8 +107,9 @@
             <p>En cas d’indisponibilité (maladie, congés…), le paiement peut être reporté dans les dix jours suivants la date initiale.</p>
         </section>
 
-        
+
     </main>
-    <?php include "components/components_footer.php";?>
+    <?php include "components/components_footer.php"; ?>
 </body>
+
 </html>

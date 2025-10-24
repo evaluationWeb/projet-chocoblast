@@ -1,0 +1,30 @@
+meta {
+  name: post
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/api
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"test2025@test.org",
+    "password":"1234",
+    "verif_password":"1234",
+    "firstname":"Mathieu",
+    "pseudo":"mathieum1224ddd5",
+    "lastname":"Mithridate"
+  }
+}
+
+body:multipart-form {
+  : 
+}
+
+settings {
+  encodeUrl: true
+}

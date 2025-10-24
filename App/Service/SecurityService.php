@@ -31,9 +31,9 @@ class SecurityService
         //Nettoyer les entrées
         $user = StringTools::sanitize_array($user);
 
-        //Test si l'utilisateur existe 
-        if ($this->userRepository->isUserExistWithEmail($user["email"])) {
-            return "Les informations email / password sont incompatibles avec l'ajout d'un compte";
+        //Test si l'utilisateur existe (email et ou pseudo)
+        if ($this->userRepository->isUserExistWithEmailOrPseudo($user["email"], $user["pseudo"])) {
+            return "Les informations email / password / pseudo sont incompatibles avec l'ajout d'un compte";
         }
 
         //Assigner les valeurs par défault
@@ -67,16 +67,16 @@ class SecurityService
     public function connexion(array $post): string
     {
         //Nettoyer
-        $user = StringTools::sanitize_array($post);
+        $post = StringTools::sanitize_array($post);
 
         //Récupére l'objet User
         $user = $this->userRepository->findUserByEmail($post["email"]);
-        
+
         //Si le compte n'existe pas
         if (!isset($user)) {
             return "Les informations de connexion email et ou password sont invalides";
         }
-        
+
         //test si les champs sont valides
         try {
             $this->validator->validate($user);
@@ -91,11 +91,11 @@ class SecurityService
         }
 
         $this->onAuthentificationFailed();
-        
+
         return "Les informations de connexion email et ou password ne sont pas correctes";
     }
-    
-    private function onAuthentificationSuccess(User $user): void 
+
+    private function onAuthentificationSuccess(User $user): void
     {
         //Création des super globales de session
         $_SESSION["email"] = $user->getEmail();
@@ -113,7 +113,8 @@ class SecurityService
     }
 
     //Logique métier de la déconnexion
-    public function deconnexion() {
+    public function deconnexion()
+    {
         session_destroy();
         header("Location:/");
     }

@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <main class="container">
     <?php include "components/components_navbar.php";?>
+    <main class="container">
     <div>
-        <h1>Ajouter un compte</h1>
         <form action="" method="post">
+            <h1>Ajouter un compte</h1>
             <input type="text" name="firstname" id="" placeholder="saisir votre prénom">
             <input type="text" name="lastname" id="" placeholder="saisir votre nom">
             <input type="text" name="pseudo" id="" placeholder="choisir un pseudo">

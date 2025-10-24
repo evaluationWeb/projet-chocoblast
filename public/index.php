@@ -41,6 +41,8 @@ $router->map(Route::controller('POST', '/register', SecurityController::class, '
 $router->map(Route::controller('GET', '/test', HomeController::class, 'test',["ROLE_USER"]));
 $router->map(Route::controller('GET', '/cgu', HomeController::class, 'showCgu'));
 $router->map(Route::controller('GET', '/api', ApiController::class, 'index'));
+$router->map(Route::controller('POST', '/api', ApiController::class, 'post'));
+$router->map(Route::controller('PUT', '/api', ApiController::class, 'put'));
 
 
 try {
